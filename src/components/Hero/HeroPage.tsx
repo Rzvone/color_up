@@ -98,7 +98,7 @@ const HeroPage = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/30">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">500+</div>
+                  <div className="text-2xl font-bold text-secondary">100+</div>
                   <div className="text-sm text-muted-foreground">
                     Clienți Mulțumiți
                   </div>
@@ -110,7 +110,7 @@ const HeroPage = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">2+</div>
+                  <div className="text-2xl font-bold text-secondary">5+</div>
                   <div className="text-sm text-muted-foreground">
                     Ani Experiență
                   </div>

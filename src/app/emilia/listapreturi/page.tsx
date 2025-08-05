@@ -1,8 +1,7 @@
 import React from 'react'
 import { Clock, Sparkles } from 'lucide-react'
 
-const ListaPreturiEmilia = () => {
-  const services = [
+export const servicesEmilia = [
     {
       category: "Manichiură",
       items: [
@@ -97,6 +96,9 @@ const ListaPreturiEmilia = () => {
     }
   ]
 
+const ListaPreturiEmilia = () => {
+  
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 p-8 select-none">
       <div className="max-w-4xl mx-auto">
@@ -115,7 +117,7 @@ const ListaPreturiEmilia = () => {
 
         {/* Services */}
         <div className="space-y-12">
-          {services.map((category, categoryIndex) => (
+          {servicesEmilia.map((category, categoryIndex) => (
             <div key={categoryIndex} className="bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 shadow-lg overflow-hidden">
               {/* Category Header */}
               <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 px-8 py-6 border-b border-border/30">

@@ -1,49 +1,49 @@
 import React from 'react'
 import { Clock, Sparkles, Eye } from 'lucide-react'
+export const servicesAndreea = [
+  {
+    category: "Gene și sprâncene",
+    items: [
+      {
+        name: "Laminare gene",
+        description: "Este un tratament de alungire și curbare care face ca genele să pară vizual mai lungi.",
+        price: "180 RON",
+        duration: "1h"
+      }
+    ]
+  },
+  {
+    category: "Extensii de gene",
+    items: [
+      {
+        name: "Set nou extensii gene",
+        description: "O metodă care constă în completarea firelor individuale de gene cu lipici pe genele dvs.",
+        price: "150 - 350 RON",
+        duration: "2h 30m"
+      },
+      {
+        name: "Gene cu efect umed (Wet lashes)",
+        description: "Extensii de gene cu aspect umed și strălucitor pentru un look dramatic și modern.",
+        price: "200 - 400 RON",
+        duration: "2h 20m"
+      },
+      {
+        name: "Gene cu efect eyeliner",
+        description: "Tehnica specială care creează efectul unui eyeliner perfect aplicat, accentuând conturul ochilor.",
+        price: "200 - 400 RON",
+        duration: "1h 40m - 2h 20m"
+      },
+      {
+        name: "Gene color",
+        description: "Extensii de gene colorate pentru un look unic și expresiv, disponibile în diverse nuanțe.",
+        price: "230 RON",
+        duration: "2h 30m"
+      }
+    ]
+  }
+]
 
 const ListaPreturiAndreea = () => {
-  const services = [
-    {
-      category: "Gene și sprâncene",
-      items: [
-        {
-          name: "Laminare gene",
-          description: "Este un tratament de alungire și curbare care face ca genele să pară vizual mai lungi.",
-          price: "180 RON",
-          duration: "1h"
-        }
-      ]
-    },
-    {
-      category: "Extensii de gene",
-      items: [
-        {
-          name: "Set nou extensii gene",
-          description: "O metodă care constă în completarea firelor individuale de gene cu lipici pe genele dvs.",
-          price: "150 - 350 RON",
-          duration: "2h 30m"
-        },
-        {
-          name: "Gene cu efect umed (Wet lashes)",
-          description: "Extensii de gene cu aspect umed și strălucitor pentru un look dramatic și modern.",
-          price: "200 - 400 RON",
-          duration: "2h 20m"
-        },
-        {
-          name: "Gene cu efect eyeliner",
-          description: "Tehnica specială care creează efectul unui eyeliner perfect aplicat, accentuând conturul ochilor.",
-          price: "200 - 400 RON",
-          duration: "1h 40m - 2h 20m"
-        },
-        {
-          name: "Gene color",
-          description: "Extensii de gene colorate pentru un look unic și expresiv, disponibile în diverse nuanțe.",
-          price: "230 RON",
-          duration: "2h 30m"
-        }
-      ]
-    }
-  ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted/20 p-8 select-none">
@@ -64,7 +64,7 @@ const ListaPreturiAndreea = () => {
 
         {/* Services */}
         <div className="space-y-12">
-          {services.map((category, categoryIndex) => (
+          {servicesAndreea.map((category, categoryIndex) => (
             <div key={categoryIndex} className="bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 shadow-lg overflow-hidden">
               {/* Category Header */}
               <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 px-8 py-6 border-b border-border/30">
